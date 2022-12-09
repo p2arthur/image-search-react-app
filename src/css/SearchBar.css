@@ -1,0 +1,23 @@
+.search-bar {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.search-bar form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 150px;
+}
+
+.search-bar input {
+  height: 30px;
+}
+.search-bar label {
+  font-weight: 700;
+}
+
+.search-bar button {
+  height: 30px;
+}

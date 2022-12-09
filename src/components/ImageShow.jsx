@@ -1,10 +1,10 @@
+import "../css/ImageShow.css";
 import ImageList from "./ImageList";
 
-function ImageShow() {
+function ImageShow({ image, alt }) {
   return (
     <div>
-      <div>Hello world</div>
-      <ImageList />
+      <img src={image.urls.small} alt={image.alt_description} />
     </div>
   );
 }
