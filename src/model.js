@@ -1,5 +1,5 @@
 import axios from "axios";
-import { API_ENDPOINT, ACCESS_KEY } from "./components/config";
+import { API_ENDPOINT, ACCESS_KEY } from "./config";
 
 //Function to fetch data using axios (URL, {Options: headers, params})
 const searchImages = async (searchTerm) => {
@@ -10,7 +10,7 @@ const searchImages = async (searchTerm) => {
     });
 
     const { results } = response.data;
-    console.log(results);
+    return results;
   } catch (error) {}
 };
 
